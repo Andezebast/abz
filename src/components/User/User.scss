@@ -1,0 +1,30 @@
+.user-item {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-image {
+    width: 70px;
+    height: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+  &-name {
+    padding: 20px 0;
+  }
+  &-name p,
+  &-position p,
+  &-email p,
+  &-phone p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+  }
+}

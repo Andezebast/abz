@@ -1,0 +1,27 @@
+.header {
+  background-color: rgba(255, 255, 255, 1);
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  &-buttons {
+    display: flex;
+    &-user,
+    &-sign {
+      padding: 0 5px;
+    }
+  }
+}
+@media (max-width: "576px") {
+  .header {
+    &-buttons {
+      &-user,
+      &-sign {
+        padding: 0 2px;
+      }
+    }
+  }
+}

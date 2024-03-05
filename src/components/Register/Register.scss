@@ -1,0 +1,15 @@
+.register {
+  display: none;
+  padding-top: 50px;
+  &-title {
+    padding-bottom: 40px;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &.show {
+    display: block;
+  }
+}

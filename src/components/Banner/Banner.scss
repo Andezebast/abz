@@ -1,0 +1,47 @@
+.banner {
+  &-container {
+    position: relative;
+    padding: 0;
+  }
+  &-background {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &-container {
+      max-width: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &-title,
+    &-description {
+      color: white;
+    }
+    &-description {
+      padding: 20px 0;
+    }
+  }
+}
+@media (max-width: "768px") {
+  .banner-background img {
+    height: 500px;
+  }
+}
+@media (max-width: "576px") {
+  .banner-content-container {
+    padding: 0 20px;
+  }
+}

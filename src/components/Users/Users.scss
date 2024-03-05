@@ -1,0 +1,34 @@
+.users {
+  padding: 150px 0;
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 40px 0;
+    width: 100%;
+  }
+  &-button.disabled {
+    display: none;
+  }
+}
+@media (max-width: "768px") {
+  .users {
+    &-items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}
+@media (max-width: "576px") {
+  .users {
+    &-items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 20px;
+    }
+  }
+}
