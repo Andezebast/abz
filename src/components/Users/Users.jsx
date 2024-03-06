@@ -2,10 +2,9 @@ import React from "react";
 import "./Users.scss";
 import User from "../User/User";
 
-const Users = ({ setPage, page, showButton, data, fetchData }) => {
+const Users = ({ setPage, page, showButton, data }) => {
   const handleButtonEvent = () => {
     setPage(page + 1);
-    fetchData();
   };
   return (
     <div className="users">

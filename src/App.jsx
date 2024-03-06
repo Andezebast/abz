@@ -32,7 +32,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Banner />
-      <Users setPage={setPage} page={page} showButton={showButton} data={data} fetchData={fetchData} />
+      <Users setPage={setPage} page={page} showButton={showButton} data={data} />
       <Form setSuccessUser={setSuccessUser} fetchData={fetchData} />
       <Register successUser={successUser} />
     </div>
